@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4</title>
+</head>
+<body>
+  <div id="app">
+    <button v-on="{mouseenter: onEnter, mouseleave: onOut}" @click = "onClick">click</button>
+    <form @keyup.enter="onEnter" @submit.prevent="onSubmit">
+      <!--v-on:可以替换成@-->
+      <input type="text">
+      <button type="submit">submit</button>
+    </form>
+  </div>
+  <script src="../lib/vue.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>6</title>
+</head>
+<body>
+  <div id="app">
+    <label>男
+      <input v-model="sex" value="male" type="radio">
+    </label>
+    <label>女
+      <input v-model="sex" value="female" type="radio">
+    </label>
+    <br>
+    {{sex}}
+    <br>
+    <label>
+        <input v-model="hobbies" value="足球" type="checkbox">足球
+      </label>
+      <label>
+        <input v-model="hobbies" value="篮球" type="checkbox">篮球
+      </label>
+      <br>
+      {{hobbies}}
+    <br>
+    <textarea v-model="article"></textarea>
+    <br>
+    <div>你是谁？</div>
+    <select v-model="form">
+      <option value="1">阿航三</option>
+      <option value="2">打算打</option>
+      <option value="3">阿的说法是打发</option>
+    </select>
+    {{form}}
+    <div>你去哪？</div>
+    <select v-model="where" multiple>
+      <option value="1">天津</option>
+      <option value="2">北京</option>
+      <option value="3">上海</option>
+    </select>
+    {{where}}
+  </div>
+  <script src="../lib/vue.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
